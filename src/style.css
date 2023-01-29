@@ -78,6 +78,18 @@ h3 {
     color: var(--secondary-color);
 }
 
+.primary-link:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-pg-color);
+    border: 1px solid var(--primary-color);
+
+}
+
+.secondary-link:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
 .secondary-link {
     border-radius: 4px;
     padding: 20px 20px;
