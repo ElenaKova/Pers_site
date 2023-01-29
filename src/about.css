@@ -1,0 +1,23 @@
+.about-paragraphs {
+    margin: 30px 0;
+}
+
+.about-paragraphs p {
+    margin: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+
+}
+
+email-link {
+    font-size: 36px;
+}
