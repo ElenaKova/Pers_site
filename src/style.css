@@ -44,6 +44,11 @@ h3 {
 
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* .img-fluid {
     width: auto;
     height: auto;
