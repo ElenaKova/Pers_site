@@ -44,6 +44,11 @@ h3 {
 
 }
 
+.img-fluid{
+    width: auto;
+    height: auto;
+}
+
 .logo {
     display: block;
     margin: 30px auto;
@@ -105,7 +110,7 @@ h3 {
 }
 
 .nav-link.active {
-    color: rgb(0, 0, 0) !important;
+    color: var(--white-color) !important;
 }
 
 .navbar-brand {
