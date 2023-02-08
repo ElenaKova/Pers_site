@@ -2,10 +2,11 @@
 
 :root {
     --bs-font-sans-serif: 'Oswald', sans-serif;
-    --primary-color: #b73c58;
-    --secondary-color: #f1ede1;
-    --third-color: #3c58b7;
-    --white-color: #fff;
+    --accent-color: #c4002e;
+    --secondary-color: #ffda65;
+    --sub-secondary-color: #ffdb6578;
+    --third-color: #07345d;
+    --primary-color: #fff;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -15,16 +16,28 @@ body {
     margin-top: 80px;
     margin-bottom: 60px;
     font-family: var(--bs-font-sans-serif);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
+span.accent {
+    color: var(--accent-color);
+}
+
+.section {
+    padding: 80px 0 40px;
+}
+
+.section-main{
+    padding: 30px;
+}
 
 h1 {
     text-align: center;
     font-weight: 900;
     margin: 0;
-    font-size: 34px;
+    font-size: 54px;
     line-height: 48px;
+    color: var(--secondary-color);
 }
 
 h2 {
@@ -33,16 +46,11 @@ h2 {
 
 h3 {
     font-weight: 400;
-    font-size: 24px;
-    opacity: 0.7;
+    font-size: 54px;
+    opacity: 0.8;
+    color: var(--third-color);
 }
 
-h1,
-h2,
-h3 {
-    color: #231d3c;
-
-}
 
 img {
     width: 100%;
@@ -100,8 +108,10 @@ img {
     margin-top: 3rem !important;
 }
 
+
+
 .bg-light {
-    background-color: var(--third-color) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .nav-link {
@@ -109,12 +119,22 @@ img {
     font-size: initial !important;
 }
 
-.nav-link.active {
-    color: var(--white-color) !important;
+.navbar {
+    background-attachment: scroll !important;
+}
+
+.navbar-nav {
+    align-items: center;
+    color: var(--third-color);
+
+}
+
+a.nav-link.active {
+    color: var(--accent-color) !important;
 }
 
 .navbar-brand {
-    color: var(--secondary-color) !important;
+    color: var(--third-color) !important;
 }
 
 .navbar-light .navbar-toggler {

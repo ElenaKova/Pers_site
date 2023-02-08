@@ -1,0 +1,11 @@
+p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.inner-contact{
+    align-items:center;
+    justify-content: center;
+    border: 6px solid var(--secondary-color);
+    border-radius: 5px;
+}
