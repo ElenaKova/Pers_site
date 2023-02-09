@@ -1,11 +1,36 @@
-p{
+p {
     font-size: 20px;
     font-weight: 300;
 }
 
-.inner-contact{
-    align-items:center;
+/* .inner-contact {
+    align-items: center;
     justify-content: center;
     border: 6px solid var(--secondary-color);
     border-radius: 5px;
+} */
+
+a.link-social {
+    color: var(--haiti-color);
+    text-decoration: none;
+
+}
+
+.item-contact {
+    padding: 1em;
+    color: var(--accent-color);
+    background-color: var(--haiti-color);
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.link-social span {
+    /* padding: 1em; */
+    color: var(--accent-color);
+    /* background-color: var(--haiti-color); */
+}
+
+p.sub-contact {
+    font-size: 24px;
+    text-align: center;
 }
