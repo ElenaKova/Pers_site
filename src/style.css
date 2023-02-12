@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Oswald:wght@200;300;400;500;600;700&family=Public+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Allison&family=Oswald:wght@200;300;400;500;600;700&family=Public+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;800;900&family=Public+Sans&display=swap');
 
 :root {
-    --bs-font-sans-serif: 'Oswald', sans-serif;
-    --accent-color: #68b3d1;
-    --yellow-color: #ffda65;
-    /* --sub-yellow-color: #ffda65; */
-    --background-color: #e6e2cf;
-    --sand-dune: #7d6865;
-    --haiti-color: #1f1230;
-    --primary-color: #fff;
+    --bs-font-sans-serif: 'Poppins', Italic;
+
+    /* --bs-font-sans-serif: 'Oswald', sans-serif; */
+    /* --dark-accent: #68b3d1; */
+    --accent-color: #D9CE9C;
+    --dark-accent: #7e9dcd;
+    --main-brand-color: #C7A4CA;
+    /* --sub-main-brand-colorlow-color: #ffda65; */
+    /* --background-color: #e6e2cf; */
+    --shades: #97462b51;
+    /* --haiti-color: #1f1230; */
+    --primary-color: #FBFAFA;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 
 body {
-    font-family: sans-serif;
-    padding: 0 20px;
+    font-family: var(--bs-font-sans-serif);
+    /* padding: 0 20px; */
     margin-top: 80px;
     margin-bottom: 60px;
     font-family: var(--bs-font-sans-serif);
@@ -45,7 +50,7 @@ a.nav-link::before {
     left: 0;
     bottom: -5px;
     width: 0;
-    height: 1.5px;
+    height: 2px;
     background-color: var(--accent-color);
 }
 
@@ -68,12 +73,13 @@ a.nav-link::before {
 }
 
 a.nav-link.active {
-    color: var(--sand-dune) !important;
+    color: var(--dark-accent) !important;
 }
 
 .navbar-brand {
     color: var(--haiti-color) !important;
     font-size: 25px !important;
+    font-weight: 700;
 }
 
 .navbar-light .navbar-toggler {
@@ -93,30 +99,32 @@ ul.navbar-nav {
 }
 
 span.accent {
-    color: var(--accent-color);
+    color: var(--dark-accent);
 }
 
 .section {
     padding: 80px 0 40px;
 }
 
-/* .section-main {
-    padding: 30px;
-    width: 100%;
-    background-color: var(--background-color);
-} */
+.section-main {
+    /* margin: 40px 0; */
+    width:100%;
+    padding: 20px;
+    background-color: var(--accent-color);
+}
 
 h1 {
     text-align: center;
     font-weight: 900;
     margin: 0;
-    font-size: 54px;
-    line-height: 48px;
-    color: var(--yellow-color);
+    font-size: 44px;
+    /* line-height: 48px; */
+    color: var(--main-brand-color);
 }
 
 .title-card {
-    color: var(--sand-dune);
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 h2 {
@@ -125,14 +133,11 @@ h2 {
 
 h3 {
     font-weight: 400;
-    font-size: 44px;
+    font-size: 34px;
     /* opacity: 0.8; */
     color: var(--sand-dune);
 }
 
-.subscription {
-    color: var(--haiti-color);
-}
 
 
 img {
@@ -152,12 +157,20 @@ img {
 
 .navigation {
     display: flex;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     justify-content: center;
 }
 
 .navigation a {
     margin: 20px;
+}
+
+a.primary-link {
+    font-weight: 500;
+}
+
+a.secondary-link {
+    font-weight: 500;
 }
 
 .primary-link {
@@ -167,13 +180,16 @@ img {
     text-transform: capitalize;
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
-    color: var(--haiti-color);
+    color: var(--dark-accent);
+    border: 2px solid var(--primary-color);
+    font-weight: 200;
 }
 
 .primary-link:hover {
-    color: var(--accent-color);
+    color: var(--dark-accent);
     background-color: var(--bg-pg-color);
     /* border: 1px solid var(--haiti-color); */
+    border: 2px solid var(--dark-accent);
 
 }
 
@@ -183,8 +199,8 @@ img {
     text-decoration: none;
     text-transform: capitalize;
     box-shadow: var(--box-shadow);
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: var(--dark-accent);
+    border: 2px solid var(--dark-accent);
 }
 
 .secondary-link:hover {
@@ -192,10 +208,10 @@ img {
     padding: 20px 20px;
     text-decoration: none;
     text-transform: capitalize;
-    background-color: var(--accent-color);
+    background-color: var(--dark-accent);
     box-shadow: var(--box-shadow);
-    color: var(--haiti-color);
-    border: 2px solid var(--accent-color);
+    color: var(--primary-color);
+    border: 2px solid var(--dark-accent);
 }
 
 .link-project {
@@ -205,8 +221,8 @@ img {
     text-transform: capitalize;
     box-shadow: var(--box-shadow);
     color: var(--haiti-color);
-    background-color: var(--accent-color);
-    /* border: 1px solid var(--haiti-color); */
+    background-color: var(--dark-accent);
+    font-weight: 500;
 }
 
 .mt-5 {
@@ -214,7 +230,7 @@ img {
 }
 
 .link-project:hover {
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 @media (max-width: 575.98px) {
