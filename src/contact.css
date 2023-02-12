@@ -46,41 +46,20 @@ p.sub-contact {
 }
 
 @media (max-width: 575.98px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
 
     .contact {
         flex-direction: column;
         text-align: center;
     }
-    .item-contact{
+
+    .item-contact {
         margin-bottom: 1em;
     }
 }
 
-@media (max-width: 767.98px) {
-    h1 {
-        font-size: 45px;
-    }
-
-    h3 {
-        font-size: 35px;
-    }
-}
+@media (max-width: 767.98px) {}
 
 @media (max-width: 991.98px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h3 {
-        font-size: 40px;
-    }
 
     .contact {
         flex-wrap: nowrap;

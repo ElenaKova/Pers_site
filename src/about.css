@@ -41,12 +41,16 @@ p.subscription {
     line-height: 1.2;
 }
 
+p.accent {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 ul li {
     list-style: none;
 }
 
 span {
-    
     color: var(--primary-color);
     font-weight: bold;
     display: inline-block;
@@ -54,35 +58,11 @@ span {
     font-size: 20px;
 }
 
-@media (max-width: 575.98px) {
-    h1 {
-        font-size: 40px;
-    }
+@media (max-width: 575.98px) {}
 
-    h3 {
-        font-size: 30px;
-    }
-}
+@media (max-width: 767.98px) {}
 
-@media (max-width: 767.98px) {
-    h1 {
-        font-size: 45px;
-    }
-
-    h3 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h3 {
-        font-size: 40px;
-    }
-}
+@media (max-width: 991.98px) {}
 
 @media (max-width: 1199.98px) {}
 
