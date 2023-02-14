@@ -3,16 +3,13 @@
 
 :root {
     --bs-font-sans-serif: 'Poppins', Italic;
-
-    /* --bs-font-sans-serif: 'Oswald', sans-serif; */
-    /* --dark-accent: #68b3d1; */
     --accent-color: #D9CE9C;
     --dark-accent: #7e9dcd;
     --main-brand-color: #C7A4CA;
     /* --sub-main-brand-colorlow-color: #ffda65; */
     /* --background-color: #e6e2cf; */
     --shades: #97462b51;
-    /* --haiti-color: #1f1230; */
+    --haiti-color: #1f1230;
     --primary-color: #FBFAFA;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -22,7 +19,7 @@ body {
     font-family: var(--bs-font-sans-serif);
     /* padding: 0 20px; */
     margin-top: 80px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     font-family: var(--bs-font-sans-serif);
     background-color: var(--primary-color);
 }
@@ -234,6 +231,9 @@ a.secondary-link {
 }
 
 @media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 18px !important;
+    }
 
     h1 {
         font-size: 30px;
@@ -249,6 +249,22 @@ a.secondary-link {
 
     .secondary-link {
         margin: 5px;
+    }
+
+
+    .primary-link {
+        border-radius: 4px;
+        padding: 15px 15px;
+    }
+
+    .secondary-link {
+        border-radius: 4px;
+        padding: 15px 15px;
+    }
+
+    .link-project {
+        border-radius: 4px;
+        padding: 15px 15px;
     }
 }
 

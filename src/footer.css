@@ -1,0 +1,37 @@
+footer {
+    padding: 50px 0;
+    background-color: var(--haiti-color);
+}
+
+
+
+.social img {
+    height: 24px;
+    width: 24px;
+}
+
+
+footer .social a {
+    margin: 0 20px;
+    color: var(--dark-accent);
+    background: var(--dark-accent);
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+}
+
+footer .social a:hover {
+    background: var(--primary-color);
+}
+
+@media (max-width: 575.98px) {
+
+    footer {
+        padding: 30px 0;
+    }
+        footer .social a {
+            margin: 0 5px;
+        }
+
+    }
