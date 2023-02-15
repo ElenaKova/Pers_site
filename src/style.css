@@ -96,7 +96,7 @@ ul.navbar-nav {
 }
 
 span.accent {
-    color: var(--dark-accent);
+    color: var(--haiti-color);
 }
 
 .section {
@@ -119,9 +119,10 @@ h1 {
     color: var(--main-brand-color);
 }
 
-.title-card {
-    color: var(--primary-color);
+h2.title-card{
+    color: var(--haiti-color);
     font-weight: 700;
+    text-decoration: underline;
 }
 
 h2 {
@@ -136,11 +137,15 @@ h3 {
 }
 
 
-
-img {
-    width: 100%;
+.img-fluid {
+    max-width: 100%;
     height: auto;
 }
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
 
 .logo {
     display: block;
