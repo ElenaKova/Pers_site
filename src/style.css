@@ -53,7 +53,7 @@ a.nav-link:hover:before {
 }
 
 a.nav-link::before {
-    transition: width 0.35s;
+    transition: 0.35s;
 }
 
 .navbar {
@@ -61,9 +61,13 @@ a.nav-link::before {
 }
 
 .navbar-nav {
-    align-items: center;
     color: var(--haiti-color);
 
+}
+
+.navbar-nav li {
+    display: inline-block;
+    text-align: left;
 }
 
 a.nav-link.active {
@@ -87,10 +91,55 @@ a.nav-link.active {
     color: var(--primary-color);
 }
 
-
 ul.navbar-nav {
     margin-left: 1em;
 }
+
+
+
+.dropbtn {
+    background-color: var(--dark-accent);
+    color: white;
+    padding: 4px 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 
 span.accent {
     color: var(--haiti-color);
@@ -101,7 +150,6 @@ span.accent {
 }
 
 .section-main {
-    /* margin: 40px 0; */
     width: 100%;
     padding: 20px;
     background-color: var(--accent-color);
@@ -112,7 +160,6 @@ h1 {
     font-weight: 900;
     margin: 0;
     font-size: 44px;
-    /* line-height: 48px; */
     color: var(--main-brand-color);
 }
 
@@ -139,10 +186,6 @@ h3 {
     height: auto;
 }
 
-/* img {
-    width: 100%;
-    height: auto;
-} */
 
 .logo {
     display: block;
@@ -173,7 +216,7 @@ a.secondary-link {
 }
 
 .primary-link {
-    border-radius: 4px;
+    border-radius: 14px;
     padding: 20px 20px;
     text-decoration: none;
     text-transform: capitalize;
@@ -193,7 +236,7 @@ a.secondary-link {
 }
 
 .secondary-link {
-    border-radius: 4px;
+    border-radius: 14px;
     padding: 20px 20px;
     text-decoration: none;
     text-transform: capitalize;
